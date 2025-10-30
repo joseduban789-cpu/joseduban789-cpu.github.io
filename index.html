@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Guía Anti-Phishing — CFT Estatal Calama 2025</title>
+  <meta name="description" content="Guía Complementaria y póster informativo: Cómo evitar el phishing. Checklist, protocolo, casos específicos y recursos para CFT Estatal Calama (2025)." />
+  <style>
+    :root{
+      --bg:#f4f8fb;
+      --card:#ffffff;
+      --accent:#0b63d4; /* azul principal */
+      --accent-2:#0f84ff;
+      --muted:#6b7280;
+      --success:#059669;
+      --danger:#ef4444;
+      --max-width:1100px;
+      --radius:12px;
+      font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+      color:#0f172a;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#eef6ff 0%,var(--bg) 60%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:32px;
+      display:flex;
+      justify-content:center;
+      font-size:16px;
+      line-height:1.45;
+    }
+    .container{
+      width:100%;
+      max-width:var(--max-width);
+      background:transparent;
+    }
+    header{
+      display:flex;
+      gap:20px;
+      align-items:center;
+      margin-bottom:20px;
+    }
+    .brand {
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:white;
+      padding:16px;
+      border-radius:14px;
+      display:flex;
+      gap:12px;
+      align-items:center;
+      box-shadow:0 6px 18px rgba(11,99,212,0.18);
+    }
+    .brand h1{
+      margin:0;
+      font-size:20px;
+      letter-spacing:0.2px;
+    }
+    .meta{
+      margin-left:auto;
+      text-align:right;
+      font-size:14px;
+      color:var(--muted);
+    }
+    main{
+      display:grid;
+      grid-template-columns: 1fr 380px;
+      gap:20px;
+      align-items:start;
+    }
+    @media (max-width:980px){
+      main{grid-template-columns:1fr;}
+      .sidebar{order:2}
+    }
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:20px;
+      box-shadow:0 6px 18px rgba(15,23,42,0.06);
+    }
+    h2{margin:0 0 10px 0;color:var(--accent)}
+    h3{margin:0 0 8px 0;font-size:18px}
+    p.lead{color:var(--muted); margin-top:6px}
+    .infographic{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      align-items:center;
+    }
+    .infographic img{
+      max-width:100%;
+      height:auto;
+      border-radius:8px;
+      border:1px solid rgba(15,23,42,0.04);
+    }
+    .section{
+      margin-bottom:18px;
+    }
+    .two-col{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+    }
+    @media (max-width:640px){ .two-col{grid-template-columns:1fr} }
+    ul.check {
+      list-style:none;
+      padding:0;
+      margin:8px 0 0 0;
+    }
+    ul.check li{
+      display:flex;
+      gap:12px;
+      padding:8px 0;
+      border-bottom:1px dashed #eef4ff;
+      align-items:flex-start;
+    }
+    .icon {
+      width:36px;height:36px;border-radius:8px;
+      display:inline-flex;align-items:center;justify-content:center;
+      background:linear-gradient(180deg,rgba(11,99,212,0.12),rgba(15,132,255,0.06));
+      color:var(--accent);
+      flex:0 0 36px;
+      font-weight:700;
+    }
+    .li-content{flex:1}
+    .muted{color:var(--muted);font-size:14px}
+    .kbd{background:#eef6ff;border:1px solid rgba(11,99,212,0.08);padding:2px 8px;border-radius:6px;font-weight:600;color:var(--accent);font-size:13px}
+    .btn{
+      background:var(--accent);
+      color:white;
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+      box-shadow:0 6px 14px rgba(11,99,212,0.14);
+    }
+    .resources a{color:var(--accent);text-decoration:none}
+    footer{margin-top:18px;font-size:13px;color:var(--muted);text-align:center}
+    .protocol ol{padding-left:18px}
+    .cases .case{border-left:4px solid #e6f0ff;padding:10px 12px;border-radius:6px;background:linear-gradient(180deg,#fff,#fbfdff)}
+    .contacts{display:flex;flex-direction:column;gap:8px}
+    .contacts .contact{display:flex;gap:10px;align-items:center}
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header aria-labelledby="title">
+      <div class="brand" aria-hidden="true">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" style="flex:0 0 36px">
+          <rect width="24" height="24" rx="6" fill="white" opacity="0.06"></rect>
+          <path d="M6 12h12M12 6v12" stroke="#0b63d4" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <h1 id="title">Cómo evitar el phishing</h1>
+          <div class="lead">Guía complementaria y póster informativo — CFT Estatal Calama (2025)</div>
+        </div>
+      </div>
+
+      
+    </header>
+
+    <main>
+      <!-- LEFT / MAIN CONTENT -->
+      <section class="card" aria-labelledby="desc">
+        <h2 id="desc">Descripción de la infografía</h2>
+        <p class="muted">
+          La infografía titulada <strong>“Cómo evitar el phishing”</strong> presenta de manera visual y estructurada las principales recomendaciones para prevenir ataques de suplantación de identidad digital.
+          El contenido se divide en dos secciones principales: <em>Para Computadores</em> y <em>Para Dispositivos Móviles</em>. El diseño enfatiza la claridad, accesibilidad y valor educativo, manteniendo un equilibrio entre elementos visuales e informativos.
+        </p>
+
+        <div class="section">
+          <h3>Secciones principales</h3>
+          <div class="two-col">
+            <div>
+              <h4>1. Para Computadores</h4>
+              <p class="muted">Incluye pautas sobre cómo verificar URLs sospechosas, señales de alerta en correos, verificación de HTTPS en navegadores, qué hacer ante mensajes dudosos y herramientas de seguridad recomendadas.</p>
+            </div>
+            <div>
+              <h4>2. Para Dispositivos Móviles</h4>
+              <p class="muted">Aborda riesgos en smartphones, verificación de aplicaciones y permisos, prevención de phishing por SMS/WhatsApp, recomendaciones de configuración y apps de seguridad móvil.</p>
+            </div>
+          </div>
+        </div>
+
+        <hr aria-hidden="true" style="border:none;border-top:1px solid #eef6ff;margin:16px 0" />
+
+        <div class="section">
+          <h3>1. Checklist diario de seguridad</h3>
+
+          <h4>Antes de abrir correos</h4>
+          <ul class="check" aria-label="Checklist antes de abrir correos">
+            <li><span class="icon">✓</span><div class="li-content"><strong>Verifica el dominio</strong><div class="muted">Comprueba que el remitente use el dominio institucional <span class="kbd">@cfta.cl</span>.</div></div></li>
+            <li><span class="icon">⚠</span><div class="li-content"><strong>Atento a errores</strong><div class="muted">No confíes en remitentes con faltas de ortografía o direcciones extrañas.</div></div></li>
+            <li><span class="icon">✉</span><div class="li-content"><strong>Asuntos sospechosos</strong><div class="muted">Desconfía de asuntos alarmantes o demasiado atractivos.</div></div></li>
+          </ul>
+
+          <h4 style="margin-top:12px">Antes de hacer clic en enlaces</h4>
+          <ul class="check" aria-label="Checklist antes de hacer clic en enlaces">
+            <li><span class="icon">🔗</span><div class="li-content"><strong>Pasa el cursor</strong><div class="muted">Visualiza la URL sin hacer clic para comprobar el destino real.</div></div></li>
+            <li><span class="icon">🔒</span><div class="li-content"><strong>HTTPS y dominio</strong><div class="muted">Comprueba que la URL empiece con <span class="kbd">https://</span> y coincida con el sitio oficial.</div></div></li>
+            <li><span class="icon">⛔</span><div class="li-content"><strong>No ingreses credenciales</strong><div class="muted">Nunca pongas tu usuario/clave en enlaces recibidos por correo sin validar.</div></div></li>
+          </ul>
+
+          <h4 style="margin-top:12px">Antes de descargar archivos</h4>
+          <ul class="check" aria-label="Checklist antes de descargar archivos">
+            <li><span class="icon">📁</span><div class="li-content"><strong>Origen confiable</strong><div class="muted">Descarga solo desde fuentes institucionales o autorizadas.</div></div></li>
+            <li><span class="icon">🧰</span><div class="li-content"><strong>Evita ejecutables</strong><div class="muted">No abras .exe, .bat, ni archivos comprimidos inesperados.</div></div></li>
+            <li><span class="icon">🔎</span><div class="li-content"><strong>Escanear</strong><div class="muted">Analiza archivos con un antivirus o VirusTotal antes de abrirlos.</div></div></li>
+          </ul>
+        </div>
+
+        <div class="section protocol">
+          <h3>2. Protocolo de acción ante sospecha</h3>
+          <ol>
+            <li><strong>Paso 1 — No interactuar:</strong> No responder ni clicar enlaces o abrir adjuntos.</li>
+            <li><strong>Paso 2 — Verificar remitente:</strong> Examina la dirección; si no es @cfta.cl o parece imitada, no confiar.</li>
+            <li><strong>Paso 3 — Reportar:</strong> Envía captura o reenvía a <a href="mailto:info@cfta.cl">info@cfta.cl</a> y/o informa al departamento de sistemas (tel: +56 2 554 650).</li>
+            <li><strong>Paso 4 — Eliminar / Archivar:</strong> Borra el correo y vacía la papelera. Si se hizo clic por error, desconéctate de Internet e informa de inmediato.</li>
+          </ol>
+        </div>
+
+        <div class="section cases">
+          <h3>3. Casos específicos del contexto estudiantil</h3>
+          <div class="case" style="margin-bottom:10px">
+            <h4 style="margin:0 0 6px 0">Correos que simulan ser de profesores</h4>
+            <p class="muted">Mensajes que dicen “revise su nota aquí” o “descargue su tarea corregida”. Siempre confirmar con el docente por correo institucional o plataforma oficial antes de descargar o abrir adjuntos.</p>
+          </div>
+
+          <div class="case" style="margin-bottom:10px">
+            <h4 style="margin:0 0 6px 0">Falsas notificaciones de plataformas educativas</h4>
+            <p class="muted">Correos que imitan Moodle o portales académicos. Verificar URL y acceder siempre desde el enlace oficial del campus o desde el menú institucional.</p>
+          </div>
+
+          <div class="case" style="margin-bottom:10px">
+            <h4 style="margin:0 0 6px 0">Estafas sobre becas/beneficios</h4>
+            <p class="muted">Solicitan datos bancarios o contraseñas. Consultar siempre en las oficinas de bienestar estudiantil o el sitio oficial antes de entregar información.</p>
+          </div>
+
+          <div class="case">
+            <h4 style="margin:0 0 6px 0">Phishing durante inscripciones</h4>
+            <p class="muted">Páginas que clonan portales de matrícula. Verificar remitente y el dominio del sitio antes de pagar o ingresar datos.</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>4. Recursos y contactos útiles</h3>
+
+          <div class="two-col">
+            <div>
+              <h4>Departamento de Sistemas — CFT</h4>
+              <div class="contacts">
+                <div class="contact"><strong>Correo:</strong>&nbsp;<a href="mailto:info@cfta.cl">info@cfta.cl</a></div>
+                <div class="contact"><strong>Teléfono:</strong>&nbsp;+56 2 554 650</div>
+                <div class="contact"><strong>Dirección:</strong>&nbsp;Riquelme 4259, Villa Ayquina, Calama</div>
+              </div>
+            </div>
+
+            <div>
+              <h4>Herramientas y sitios de verificación</h4>
+              <ul class="check">
+                <li><span class="icon">🌐</span><div class="li-content"><strong>PhishTank</strong><div class="muted">Base colaborativa para verificar sitios de phishing. <a href="https://phishtank.org" target="_blank" rel="noopener">phishtank.org</a></div></div></li>
+                <li><span class="icon">🔎</span><div class="li-content"><strong>Have I Been Pwned</strong><div class="muted">Comprueba si un correo ha sido filtrado. <a href="https://haveibeenpwned.com" target="_blank" rel="noopener">haveibeenpwned.com</a></div></div></li>
+                <li><span class="icon">🛡</span><div class="li-content"><strong>VirusTotal</strong><div class="muted">Escanea URLs y archivos sospechosos. <a href="https://www.virustotal.com" target="_blank" rel="noopener">virustotal.com</a></div></div></li>
+              </ul>
+            </div>
+          </div>
+
+          <h4 style="margin-top:12px">Extensiones de navegador recomendadas</h4>
+          <ul class="check">
+            <li><span class="icon">🔍</span><div class="li-content"><strong>Netcraft Extension</strong><div class="muted">Detecta phishing y analiza reputación de sitios.</div></div></li>
+            <li><span class="icon">🛡</span><div class="li-content"><strong>Avast Online Security</strong><div class="muted">Bloqueo de sitios fraudulentos y valoración de seguridad.</div></div></li>
+            <li><span class="icon">⚙️</span><div class="li-content"><strong>Bitdefender TrafficLight</strong><div class="muted">Escanea enlaces y bloquea contenido malicioso.</div></div></li>
+          </ul>
+        </div>
+
+        <hr style="border:none;border-top:1px solid #eef6ff;margin:18px 0" />
+
+        <div class="section">
+          <h3>Conclusión</h3>
+          <p class="muted">La prevención del phishing depende de la verificación constante y de seguir protocolos sencillos. Esta guía está pensada para el contexto del <strong>CFT Estatal Calama</strong> y busca entregar herramientas prácticas y recursos para estudiantes y personal técnico.</p>
+        </div>
+      </section>
+
+      <!-- RIGHT / SIDEBAR -->
+      <aside class="sidebar card" aria-labelledby="infog">
+        <h2 id="infog">Infografía (Póster)</h2>
+        <div class="infographic" role="figure" aria-label="Infografía Cómo evitar el phishing">
+          <!-- Reemplaza 'infografia.png' por el nombre real del archivo generado -->
+          <img src="infografia.png" alt="Infografía: Cómo evitar el phishing — vista previa. Reemplaza este archivo por la imagen PNG final." />
+          <div style="display:flex;gap:8px;margin-top:12px;justify-content:center">
+            <a class="btn" href="infografia.png" download>Descargar PNG</a>
+            <a class="btn" href="#" onclick="window.print();return false;" style="background:#06b6d4">Imprimir</a>
+          </div>
+        </div>
+
+        <hr style="border:none;border-top:1px solid #eef6ff;margin:16px 0" />
+
+        <div>
+          <h3>Ficha técnica</h3>
+          <p class="muted" style="margin:0">Este contenido fue organizado con apoyo de asistentes de IA y revisión humana. Incluye textos para la infografía, checklist, protocolo y recursos para su difusión digital o impresa.</p>
+        </div>
+
+        <hr style="border:none;border-top:1px solid #eef6ff;margin:16px 0" />
+
+       
+      </aside>
+    </main>
+
+    <footer class="card" aria-hidden="true" style="margin-top:20px">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px">
+        <div class="muted">© CFT Estatal Calama — Guía Anti-Phishing · 2025</div>
+        <div style="color:var(--muted)">Documento generado para uso institucional — Mantener actualizado</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
